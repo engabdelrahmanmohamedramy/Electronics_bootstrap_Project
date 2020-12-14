@@ -193,7 +193,10 @@
 													<div class="input-group-addon">
 															<i class="fa fa-user"></i>
 													</div>
-													<input type="text" id="username" name="username" placeholder="Username" class="form-control">
+													<input type="text" id="user_name_english" name="user_name_english" placeholder="user_name_english" class="form-control">
+													<input type="text" id="user_name_arabic" name="user_name_arabic" placeholder="user_name_arabic" class="form-control">
+													<input type="text" id="user_name_german" name="user_name_german" placeholder="user_name_german" class="form-control">
+													<input type="text" id="user_name_french" name="user_name_french" placeholder="user_name_french" class="form-control">
 											</div>
 									</div>
 									<div class="form-group">
@@ -201,9 +204,13 @@
 													<div class="input-group-addon">
 															<i class="fa fa-user"></i>
 													</div>
-													<input type="text" id="role" name="role" placeholder="role" class="form-control">
+													<select name="select" id="select" class="form-control">
+														<option value="0">user</option>
+														<option value="1">Admin</option>
+												</select>
 											</div>
-									</div>
+										</div>
+									
 									<div class="form-group">
 											<div class="input-group">
 													<div class="input-group-addon">
@@ -239,15 +246,15 @@
 									 <table class="table">
 											 <thead>
 													 <tr>
-															 <td>
+															<td>
 																	 <label class="au-checkbox">
 																			 <input type="checkbox">
 																			 <span class="au-checkmark"></span>
 																	 </label>
 															 </td>
+															 <td>ID</td>
 															 <td>name</td>
 															 <td>role</td>
-															 <td>type</td>
 															 <td></td>
 															 <td>Edit</td>
 															 <td>Delete</td>
@@ -262,6 +269,9 @@
 																	 </label>
 															 </td>
 															 <td>
+																 1
+															 </td>
+															 <td>
 																	 <div class="table-data__info">
 																			 <h6>Abdelrahman Mohamed Ramy</h6>
 																			 <span>
@@ -269,14 +279,12 @@
 																			 </span>
 																	 </div>
 															 </td>
-															 <td>
-																	 <span class="role admin">admin</span>
-															 </td>
+															 
 															 <td>
 																	 <div class="rs-select2--trans rs-select2--sm">
 																			 <select class="js-select2" name="property">
-																					 <option selected="selected">Full Control</option>
-																					 <option value="">Watch</option>
+																					 <option selected="selected">Admin</option>
+																					 <option value="">User</option>
 																			 </select>
 																			 <div class="dropDownSelect2"></div>
 																	 </div>
@@ -291,113 +299,117 @@
 		 													<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
 													 </tr>
 													 <tr>
-															 <td>
-																	 <label class="au-checkbox">
-																			 <input type="checkbox">
-																			 <span class="au-checkmark"></span>
-																	 </label>
-															 </td>
-															 <td>
-																	 <div class="table-data__info">
-																			 <h6>Abdelrahman Mohamed Ramy</h6>
-																			 <span>
-																					 <a href="#">eng.abdelrahman.mohamed.ramy45@gmail.com</a>
-																			 </span>
-																	 </div>
-															 </td>
-															 <td>
-																	 <span class="role admin">admin</span>
-															 </td>
-															 <td>
-																	 <div class="rs-select2--trans rs-select2--sm">
-																			 <select class="js-select2" name="property">
-																					 <option selected="selected">Full Control</option>
-																					 <option value="">Watch</option>
-																			 </select>
-																			 <div class="dropDownSelect2"></div>
-																	 </div>
-															 </td>
-															 <td>
-																	 <span class="more">
-																			 <i class="zmdi zmdi-more"></i>
-																	 </span>
-															 </td>
-															 <td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
-		 													<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
-													 </tr>
+														<td>
+																<label class="au-checkbox">
+																		<input type="checkbox">
+																		<span class="au-checkmark"></span>
+																</label>
+														</td>
+														<td>
+															1
+														</td>
+														<td>
+																<div class="table-data__info">
+																		<h6>Abdelrahman Mohamed Ramy</h6>
+																		<span>
+																				<a href="#">eng.abdelrahman.mohamed.ramy45@gmail.com</a>
+																		</span>
+																</div>
+														</td>
+														
+														<td>
+																<div class="rs-select2--trans rs-select2--sm">
+																		<select class="js-select2" name="property">
+																				<option selected="selected">Admin</option>
+																				<option value="">User</option>
+																		</select>
+																		<div class="dropDownSelect2"></div>
+																</div>
+														</td>
 
-													 <tr>
- 															<td>
- 																	<label class="au-checkbox">
- 																			<input type="checkbox">
- 																			<span class="au-checkmark"></span>
- 																	</label>
- 															</td>
- 															<td>
- 																	<div class="table-data__info">
- 																			<h6>Abdelrahman Mohamed Ramy</h6>
- 																			<span>
- 																					<a href="#">eng.abdelrahman.mohamed.ramy45@gmail.com</a>
- 																			</span>
- 																	</div>
- 															</td>
- 															<td>
- 																	<span class="role admin">admin</span>
- 															</td>
- 															<td>
- 																	<div class="rs-select2--trans rs-select2--sm">
- 																			<select class="js-select2" name="property">
- 																					<option selected="selected">Full Control</option>
- 																					<option value="">Watch</option>
- 																			</select>
- 																			<div class="dropDownSelect2"></div>
- 																	</div>
- 															</td>
- 															<td>
- 																	<span class="more">
- 																			<i class="zmdi zmdi-more"></i>
- 																	</span>
- 															</td>
-															<td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
-														 <td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
- 													</tr>
+														<td>
+																<span class="more">
+																		<i class="zmdi zmdi-more"></i>
+																</span>
+														</td>
+														<td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
+														<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
+												</tr>
 
-												  <tr>
-															 <td>
-																	 <label class="au-checkbox">
-																			 <input type="checkbox">
-																			 <span class="au-checkmark"></span>
-																	 </label>
-															 </td>
-															 <td>
-																	 <div class="table-data__info">
-																			 <h6>Abdelrahman Mohamed Ramy</h6>
-																			 <span>
-																					 <a href="#">eng.abdelrahman.mohamed.ramy45@gmail.com</a>
-																			 </span>
-																	 </div>
-															 </td>
-															 <td>
-																	 <span class="role admin">admin</span>
-															 </td>
-															 <td>
-																	 <div class="rs-select2--trans rs-select2--sm">
-																			 <select class="js-select2" name="property">
-																					 <option selected="selected">Full Control</option>
-																					 <option value="">Watch</option>
-																			 </select>
-																			 <div class="dropDownSelect2"></div>
-																	 </div>
-															 </td>
-															 <td>
-																	 <span class="more">
-																			 <i class="zmdi zmdi-more"></i>
-																	 </span>
-															 </td>
-															 <td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
-		 													<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
-													 </tr>
+												<tr>
+													<td>
+															<label class="au-checkbox">
+																	<input type="checkbox">
+																	<span class="au-checkmark"></span>
+															</label>
+													</td>
+													<td>
+														1
+													</td>
+													<td>
+															<div class="table-data__info">
+																	<h6>Abdelrahman Mohamed Ramy</h6>
+																	<span>
+																			<a href="#">eng.abdelrahman.mohamed.ramy45@gmail.com</a>
+																	</span>
+															</div>
+													</td>
+													
+													<td>
+															<div class="rs-select2--trans rs-select2--sm">
+																	<select class="js-select2" name="property">
+																			<option selected="selected">Admin</option>
+																			<option value="">User</option>
+																	</select>
+																	<div class="dropDownSelect2"></div>
+															</div>
+													</td>
 
+													<td>
+															<span class="more">
+																	<i class="zmdi zmdi-more"></i>
+															</span>
+													</td>
+													<td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
+													<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
+											</tr>
+											<tr>
+												<td>
+														<label class="au-checkbox">
+																<input type="checkbox">
+																<span class="au-checkmark"></span>
+														</label>
+												</td>
+												<td>
+													1
+												</td>
+												<td>
+														<div class="table-data__info">
+																<h6>Abdelrahman Mohamed Ramy</h6>
+																<span>
+																		<a href="#">eng.abdelrahman.mohamed.ramy45@gmail.com</a>
+																</span>
+														</div>
+												</td>
+												
+												<td>
+														<div class="rs-select2--trans rs-select2--sm">
+																<select class="js-select2" name="property">
+																		<option selected="selected">Admin</option>
+																		<option value="">User</option>
+																</select>
+																<div class="dropDownSelect2"></div>
+														</div>
+												</td>
+
+												<td>
+														<span class="more">
+																<i class="zmdi zmdi-more"></i>
+														</span>
+												</td>
+												<td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
+												<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
+										</tr>
 											 </tbody>
 									 </table>
 							 </div>

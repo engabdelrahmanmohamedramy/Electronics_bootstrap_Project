@@ -195,22 +195,40 @@
 															 <label for="Name Product" class=" form-control-label">Name Product</label>
 													 </div>
 													 <div class="col-12 col-md-9">
-															 <input type="text" id="text-input" name="text-input" placeholder="Name Product" class="form-control">                                                </div>
+														 <input type="text" id="product_name_english" name="product_name_english" placeholder="product_name_english" class="form-control">
+														<input type="text" id="product_name_arabic" name="product_name_arabic" placeholder="product_name_arabic" class="form-control">
+														<input type="text" id="product_name_german" name="product_name_german" placeholder="product_name_german" class="form-control">
+														<input type="text" id="product_name_french" name="product_name_french" placeholder="product_name_french" class="form-control">
+													</div>
 											 </div>
 											 <div class="row form-group">
 													 <div class="col col-md-3">
-															 <label for="Name Product" class=" form-control-label">Price</label>
+															 <label for="price" class=" form-control-label">Price</label>
 													 </div>
+
 													 <div class="col-12 col-md-9">
-															 <input type="text" id="text-input" name="text-input" placeholder="Price" class="form-control">                                                </div>
+														<input type="number" id="product_price_Dolar" name="product_price_Dolar" placeholder="product_price_Dolar" class="form-control">
+														<input type="number" id="product_price_Euro" name="product_price_Euro" placeholder="product_price_Euro" class="form-control">
+														<input type="number" id="product_price_Egp" name="product_price_Egp" placeholder="product_price_Egp" class="form-control">														</div>
 											 </div>
+											 <div class="row form-group">
+												<div class="col col-md-3">
+														<label for="Quantity" class="form-control-label">Quantity</label>
+												</div>
+												<div class="col-12 col-md-9">
+													<input type="number" id="Quantity" name="Quantity" placeholder="Quantity" class="form-control">
+                                                </div>
+											  </div>
 											 <div class="row form-group">
 													 <div class="col col-md-3">
 															 <label for="textarea-input" class=" form-control-label">Description</label>
 													 </div>
 													 <div class="col-12 col-md-9">
-															 <textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Description" class="form-control"></textarea>
-													 </div>
+															 <textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Description_english" class="form-control"></textarea>
+															 <textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Description_arabic" class="form-control"></textarea>
+															 <textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Description_german" class="form-control"></textarea>
+															 <textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Description_french" class="form-control"></textarea>
+											  </div>
 											 </div>
 											 <div class="row form-group">
 													 <div class="col col-md-3">
@@ -238,6 +256,34 @@
 															 </select>
 													 </div>
 											 </div>
+											 <div class="row form-group">
+												<div class="col col-md-3">
+														<label for="select" class=" form-control-label">Size</label>
+												</div>
+												<div class="col-12 col-md-9">
+														<select name="select" id="select" class="form-control">
+																<option value="0">S</option>
+																<option value="1" selected>M</option>
+																<option value="2">L</option>
+																<option value="3">XL</option>
+														</select>
+												</div>
+											</div>
+												<div class="row form-group">
+													<div class="col col-md-3">
+															<label for="select" class=" form-control-label">Color</label>
+													</div>
+													<div class="col-12 col-md-9">
+															<select name="select" id="select" class="form-control" multiple>
+																	<option value="0">Red</option>
+																	<option value="1">Yellow</option>
+																	<option value="2" selected>Black</option>
+																	<option value="3">Blue</option>
+																	<option value="3">Grey</option>
+																	<option value="3">Pink</option>
+															</select>
+													</div>
+										</div>
 											 <div class="row form-group">
 													 <div class="col col-md-3">
 															 <label for="file-input" class=" form-control-label">Picture</label>
@@ -275,137 +321,145 @@
                <table class="table table-borderless table-data3">
                    <thead>
                        <tr>
-												 <th>id</th>
-                           <th>date</th>
-													 <th>Name of Product</th>
+						   <th>id</th>
+						   <th>product_name_english</th>
                            <th>category</th>
-													 <th>Brand</th>
-                           <th>description</th>
-                           <th>status</th>
+						    <th>Brand</th>
+							<th>Quantity</th>
+                           <th>product_description_english</th>
+						   <th>Size</th>
+						   <th>Color</th>
                            <th>price</th>
-													 <th>image</th>
- 													<th>Edit</th>
- 													<th>delete</th>
+							<th>image</th>
+ 							<th>Edit</th>
+ 							<th>delete</th>
                        </tr>
                    </thead>
                    <tbody>
                        <tr>
-												 <td>0</td>
-                           <td>2020-12-1 05:57</td>
+						   <td>0</td>
                            <td>iPhone X</td>
-													 <td>Mobile phone</td>
-													 <td>Apple</td>
-                           <td>iPhone X 64Gb Grey</td>
-                           <td class="process">Processed</td>
+							<td>Mobile IOS</td>
+							<td>Apple</td>
+							<td>10</td>
+						   <td>iPhone X 64Gb </td>
+						   <td>S</td>
+						   <td>Black</td>
                            <td>$999.00</td>
-													 <td><img src="../assets/images/products/digital_01.jpg" alt="product1" height="100" width="100"></td>
- 													<td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
- 													<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
+							<td><img src="../assets/images/products/digital_01.jpg" alt="product1" height="100" width="100"></td>
+ 							<td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
+ 						  <td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
                        </tr>
 
  	                        <tr>
- 	 												 <td>0</td>
- 	                            <td>2020-12-1 05:57</td>
- 	                            <td>iPhone X</td>
- 	 													 <td>Mobile phone</td>
- 	 													 <td>Apple</td>
- 	                            <td>iPhone X 64Gb Grey</td>
- 	                            <td class="process">Processed</td>
- 	                            <td>$999.00</td>
- 	 													 <td><img src="../assets/images/products/digital_01.jpg" alt="product1" height="100" width="100"></td>
- 	  													<td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
- 	  													<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
- 	                        </tr>
+						   <td>0</td>
+                           <td>iPhone X</td>
+							<td>Mobile IOS</td>
+							<td>Apple</td>
+							<td>10</td>
+						   <td>iPhone X 64Gb </td>
+						   <td>S</td>
+						   <td>Black</td>
+                           <td>$999.00</td>
+							<td><img src="../assets/images/products/digital_01.jpg" alt="product1" height="100" width="100"></td>
+ 							<td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
+ 						  <td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
+                       </tr>
 
 
 			                        <tr>
-			 												 <td>0</td>
-			                            <td>2020-12-1 05:57</td>
-			                            <td>iPhone X</td>
-			 													 <td>Mobile phone</td>
-			 													 <td>Apple</td>
-			                            <td>iPhone X 64Gb Grey</td>
-			                            <td class="process">Processed</td>
-			                            <td>$999.00</td>
-			 													 <td><img src="../assets/images/products/digital_01.jpg" alt="product1" height="100" width="100"></td>
-			  													<td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
-			  													<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
-			                        </tr>
+						   <td>0</td>
+                           <td>iPhone X</td>
+							<td>Mobile IOS</td>
+							<td>Apple</td>
+							<td>10</td>
+						   <td>iPhone X 64Gb </td>
+						   <td>S</td>
+						   <td>Black</td>
+                           <td>$999.00</td>
+							<td><img src="../assets/images/products/digital_01.jpg" alt="product1" height="100" width="100"></td>
+ 							<td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
+ 						  <td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
+                       </tr>
 
 
 					                        <tr>
-					 												 <td>0</td>
-					                            <td>2020-12-1 05:57</td>
-					                            <td>iPhone X</td>
-					 													 <td>Mobile phone</td>
-					 													 <td>Apple</td>
-					                            <td>iPhone X 64Gb Grey</td>
-					                            <td class="process">Processed</td>
-					                            <td>$999.00</td>
-					 													 <td><img src="../assets/images/products/digital_01.jpg" alt="product1" height="100" width="100"></td>
-					  													<td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
-					  													<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
-					                        </tr>
-
-
-							                        <tr>
-							 												 <td>0</td>
-							                            <td>2020-12-1 05:57</td>
-							                            <td>iPhone X</td>
-							 													 <td>Mobile phone</td>
-							 													 <td>Apple</td>
-							                            <td>iPhone X 64Gb Grey</td>
-							                            <td class="process">Processed</td>
-							                            <td>$999.00</td>
-							 													 <td><img src="../assets/images/products/digital_01.jpg" alt="product1" height="100" width="100"></td>
-							  													<td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
-							  													<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
-							                        </tr>
+						   <td>0</td>
+                           <td>iPhone X</td>
+							<td>Mobile IOS</td>
+							<td>Apple</td>
+							<td>10</td>
+						   <td>iPhone X 64Gb </td>
+						   <td>S</td>
+						   <td>Black</td>
+                           <td>$999.00</td>
+							<td><img src="../assets/images/products/digital_01.jpg" alt="product1" height="100" width="100"></td>
+ 							<td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
+ 						  <td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
+					   </tr>
+					   
+						<tr>
+						   <td>0</td>
+                           <td>iPhone X</td>
+							<td>Mobile IOS</td>
+							<td>Apple</td>
+							<td>10</td>
+						   <td>iPhone X 64Gb </td>
+						   <td>S</td>
+						   <td>Black</td>
+                           <td>$999.00</td>
+							<td><img src="../assets/images/products/digital_01.jpg" alt="product1" height="100" width="100"></td>
+ 							<td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
+ 						  <td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
+                       </tr>
 
 
 									                        <tr>
-									 												 <td>0</td>
-									                            <td>2020-12-1 05:57</td>
-									                            <td>iPhone X</td>
-									 													 <td>Mobile phone</td>
-									 													 <td>Apple</td>
-									                            <td>iPhone X 64Gb Grey</td>
-									                            <td class="process">Processed</td>
-									                            <td>$999.00</td>
-									 													 <td><img src="../assets/images/products/digital_01.jpg" alt="product1" height="100" width="100"></td>
-									  													<td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
-									  													<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
-									                        </tr>
+						   <td>0</td>
+                           <td>iPhone X</td>
+							<td>Mobile IOS</td>
+							<td>Apple</td>
+							<td>10</td>
+						   <td>iPhone X 64Gb </td>
+						   <td>S</td>
+						   <td>Black</td>
+                           <td>$999.00</td>
+							<td><img src="../assets/images/products/digital_01.jpg" alt="product1" height="100" width="100"></td>
+ 							<td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
+ 						  <td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
+                       </tr>
 
 
 											                        <tr>
-											 												 <td>0</td>
-											                            <td>2020-12-1 05:57</td>
-											                            <td>iPhone X</td>
-											 													 <td>Mobile phone</td>
-											 													 <td>Apple</td>
-											                            <td>iPhone X 64Gb Grey</td>
-											                            <td class="process">Processed</td>
-											                            <td>$999.00</td>
-											 													 <td><img src="../assets/images/products/digital_01.jpg" alt="product1" height="100" width="100"></td>
-											  													<td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
-											  													<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
-											                        </tr>
+						   <td>0</td>
+                           <td>iPhone X</td>
+							<td>Mobile IOS</td>
+							<td>Apple</td>
+							<td>10</td>
+						   <td>iPhone X 64Gb </td>
+						   <td>S</td>
+						   <td>Black</td>
+                           <td>$999.00</td>
+							<td><img src="../assets/images/products/digital_01.jpg" alt="product1" height="100" width="100"></td>
+ 							<td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
+ 						  <td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
+                       </tr>
 
 
 													                        <tr>
-													 												 <td>0</td>
-													                            <td>2020-12-1 05:57</td>
-													                            <td>iPhone X</td>
-													 													 <td>Mobile phone</td>
-													 													 <td>Apple</td>
-													                            <td>iPhone X 64Gb Grey</td>
-													                            <td class="process">Processed</td>
-													                            <td>$999.00</td>
-													 													 <td><img src="../assets/images/products/digital_01.jpg" alt="product1" height="100" width="100"></td>
-													  													<td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
-													  													<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
-													                        </tr>
+						   <td>0</td>
+                           <td>iPhone X</td>
+							<td>Mobile IOS</td>
+							<td>Apple</td>
+							<td>10</td>
+						   <td>iPhone X 64Gb </td>
+						   <td>S</td>
+						   <td>Black</td>
+                           <td>$999.00</td>
+							<td><img src="../assets/images/products/digital_01.jpg" alt="product1" height="100" width="100"></td>
+ 							<td><input class="bg-success" type="button" value="Edit" name="Edit"/></td>
+ 						  <td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
+                       </tr>
 
                    </tbody>
                </table>
