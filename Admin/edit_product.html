@@ -15,7 +15,9 @@
 	<link rel="stylesheet" type="text/css" href="../assets/css/chosen.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/color-01.css">
-</head>
+	<script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+	<script>tinymce.init({selector:'textarea'});</script>
+  </head>
 
 <body class="home-page home-01 ">
 
@@ -179,212 +181,151 @@
 			</div>
 		</div>
 	</header>
-<div class="container-fluid">
-  <div class="row">
-<div class="col-lg-6" id="category">
-    <div class="card">
-        <div class="card-header"><h2>Create category Form</h2></div>
-        <div class="card-body card-block">
-            <form action="" method="post" class="">
-                <div class="form-group">
-                    <div class="input-group">
-						<div class="input-group-addon">Name category</div>
-						<input type="text" id="category_name_english" name="category_name_english" placeholder="category_name_english" class="form-control">
-						<input type="text" id="category_name_arabic" name="category_name_arabic" placeholder="category_name_arabic" class="form-control">
-						<div class="input-group-addon">
-                            <i class="fa fa-user"></i>
-                        </div>
-                    </div>
-                </div>
-                <div class="form-actions form-group">
-                    <button type="submit" class="btn btn-primary btn-sm">Submit</button>
-                </div>
-            </form>
-        </div>
-    </div>
+
+<div class="CONTAINER" id="products">
+	<div class="container-fluid">
+		 <div class="row">
+			 <div class="col-lg-12">
+					 <div class="card">
+							 <div class="card-header">
+									 <strong><h2>Update Product</h2></strong>
+							 </div>
+							 <div class="card-body card-block">
+									 <form action="" method="post" enctype="multipart/form-data" class="form-horizontal">
+											 <div class="row form-group">
+													 <div class="col col-md-3">
+															 <label for="Name Product" class=" form-control-label">Name Product</label>
+													 </div>
+													 <div class="col-12 col-md-9">
+														 <input type="text" id="product_name_english" name="product_name_english" placeholder="product_name_english" class="form-control">
+														<input type="text" id="product_name_arabic" name="product_name_arabic" placeholder="product_name_arabic" class="form-control">
+													</div>
+											 </div>
+											 <div class="row form-group">
+													 <div class="col col-md-3">
+															 <label for="price" class=" form-control-label">Price</label>
+													 </div>
+
+													 <div class="col-12 col-md-9">
+														<input type="number" id="price" name="price" placeholder="price" class="form-control">
+											 </div>
+											</div>
+											 <div class="row form-group">
+												<div class="col col-md-3">
+														<label for="Quantity" class="form-control-label">Quantity</label>
+												</div>
+												<div class="col-12 col-md-9">
+													<input type="number" id="Quantity" name="Quantity" placeholder="Quantity" class="form-control">
+                                                </div>
+											  </div>
+											 <div class="row form-group">
+													 <div class="col col-md-3">
+															 <label for="textarea-input" class=" form-control-label">Description</label>
+													 </div>
+													 <div class="col-12 col-md-9">
+															 <textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Description_english" class="form-control"></textarea>
+															 <textarea name="textarea-input" id="textarea-input" rows="9" placeholder="Description_arabic" class="form-control"></textarea>
+											  </div>
+											 </div>
+											 <div class="row form-group">
+													 <div class="col col-md-3">
+															 <label for="select" class=" form-control-label">Category</label>
+													 </div>
+													 <div class="col-12 col-md-9">
+															 <select name="select" id="select" class="form-control">
+																	 <option value="0">IOS Mobiles</option>
+																	 <option value="1">Android Mobiles</option>
+																	 <option value="2">Harmony os Mobiles</option>
+																	 <option value="3">IOS Ipads</option>
+																	 <option value="4">Android Ipads</option>
+																	 <option value="5">IOS Tablets</option>
+																	 <option value="6">Android Tablets</option>
+																	 <option value="7">screen</option>
+																	 <option value="8">Batteries</option>
+																	 <option value="9">Headphones</option>
+																	 <option value="10">Covers</option>
+																	 <option value="11">Chargers</option>
+
+															 </select>
+													 </div>
+											 </div>
+											 <div class="row form-group">
+													 <div class="col col-md-3">
+															 <label for="select" class=" form-control-label">Brand</label>
+													 </div>
+													 <div class="col-12 col-md-9">
+															 <select name="select" id="select" class="form-control">
+																	 <option value="0">Apple</option>
+																	 <option value="1">Samsung</option>
+																	 <option value="2">Xiaomi</option>
+																	 <option value="3">OPPO</option>
+																	 <option value="4">HUAWEI</option>
+																	 <option value="5">Infinix</option>
+																	 <option value="6">Honor</option>
+															 </select>
+													 </div>
+											 </div>
+											 <div class="row form-group">
+												<div class="col col-md-3">
+														<label for="select" class=" form-control-label">Size</label>
+												</div>
+												<div class="col-12 col-md-9">
+														<select name="select" id="select" class="form-control">
+																<option value="0">S</option>
+																<option value="1" selected>M</option>
+																<option value="2">L</option>
+																<option value="3">XL</option>
+														</select>
+												</div>
+											</div>
+												<div class="row form-group">
+													<div class="col col-md-3">
+															<label for="select" class=" form-control-label">Color</label>
+													</div>
+													<div class="col-12 col-md-9">
+															<select name="select" id="select" class="form-control" multiple>
+																	<option value="0">Red</option>
+																	<option value="1">Yellow</option>
+																	<option value="2" selected>Black</option>
+																	<option value="3">Blue</option>
+																	<option value="3">Grey</option>
+																	<option value="3">Pink</option>
+															</select>
+												</div>
+										</div>
+											 <div class="row form-group">
+													 <div class="col col-md-3">
+															 <label for="file-input" class=" form-control-label">Picture</label>
+													 </div>
+													 <div class="col-12 col-md-9">
+															 <input type="file" id="file-input" name="file-input" class="form-control-file">
+													 </div>
+											 </div>
+											 <div class="row form-group">
+													 <div class="col col-md-3">
+															 <label for="file-multiple-input" class=" form-control-label">Another Pictures</label>
+													 </div>
+													 <div class="col-12 col-md-9">
+															 <input type="file" id="file-multiple-input" name="file-multiple-input" multiple="" class="form-control-file">
+													 </div>
+											 </div>
+									 </form>
+							 </div>
+							 <div class="card-footer">
+									 <button type="submit" class="btn btn-primary btn-sm">
+											 <i class="fa fa-dot-circle-o"></i> Update
+									 </button>
+									 <button type="reset" class="btn btn-danger btn-sm">
+											 <i class="fa fa-ban"></i> Reset
+									 </button>
+							 </div>
+					 </div>
+			 </div>
+		 </div>
+		 <hr>
+
+  </div>
 </div>
-</div>
-</div>
-
-
-<div class="row">
-      <div class="col-lg-12">
-          <!-- DATA TABLE-->
-          <div class="table-responsive m-b-40">
-              <table class="table table-borderless table-data3">
-                  <thead>
-					<tr>
-						<td>
-								<label class="au-checkbox">
-										<input type="checkbox">
-										<span class="au-checkmark"></span>
-								</label>
-						</td>
-								<th>ID</th>
-								<th>Name of Category</th>
-								<th>Edit</th>
-								<th>delete</th>
-					</tr>
-                  </thead>
-                  <tbody>
-						<tr>
-							<td>
-								<label class="au-checkbox">
-										<input type="checkbox">
-										<span class="au-checkmark"></span>
-								</label>
-						    </td>
-							<td>0</td>
-							<td>IOS Mobiles</td>
-							<td><a href="edit_category.html"><input class="bg-success" type="button" value="Edit" name="Edit"/></a></td>
-							<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
-						</tr>
-						<tr>
-							
-							<td>
-								<label class="au-checkbox">
-										<input type="checkbox">
-										<span class="au-checkmark"></span>
-								</label>
-						    </td>
-								<td>1</td>
-								<td>Android Mobiles</td>
-								<td><a href="edit_category.html"><input class="bg-success" type="button" value="Edit" name="Edit"/></a></td>
-								<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
-						</tr>
-
-					  <tr>
-							<td>
-								<label class="au-checkbox">
-										<input type="checkbox">
-										<span class="au-checkmark"></span>
-								</label>
-						    </td>
-							<td>2</td>
-							<td>Harmony os Mobiles</td>
-							<td><a href="edit_category.html"><input class="bg-success" type="button" value="Edit" name="Edit"/></a></td>
-							<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
-						</tr>
-						<tr>
-							<td>
-								<label class="au-checkbox">
-										<input type="checkbox">
-										<span class="au-checkmark"></span>
-								</label>
-						    </td>
-								<td>3</td>
-								<td>IOS Ipads</td>
-								<td><a href="edit_category.html"><input class="bg-success" type="button" value="Edit" name="Edit"/></a></td>
-								<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
-					    </tr>
-
-					  	<tr>
-							<td>
-								<label class="au-checkbox">
-										<input type="checkbox">
-										<span class="au-checkmark"></span>
-								</label>
-						    </td>
-								<td>4</td>
-								<td>Android Ipads</td>
-								<td><a href="edit_category.html"><input class="bg-success" type="button" value="Edit" name="Edit"/></a></td>
-								<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
-					    </tr>
-
-					    <tr>
-							<td>
-								<label class="au-checkbox">
-										<input type="checkbox">
-										<span class="au-checkmark"></span>
-								</label>
-						    </td>
-								<td>5</td>
-								<td>IOS Tablets</td>
-								<td><a href="edit_category.html"><input class="bg-success" type="button" value="Edit" name="Edit"/></a></td>
-								<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
-					    </tr>
-
-					    <tr>
-							<td>
-								<label class="au-checkbox">
-										<input type="checkbox">
-										<span class="au-checkmark"></span>
-								</label>
-						    </td>
-								<td>6</td>
-								<td>Android Tablets</td>
-								<td><a href="edit_category.html"><input class="bg-success" type="button" value="Edit" name="Edit"/></a></td>
-								<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
-					    </tr>
-
-					  <tr>
-							<td>
-								<label class="au-checkbox">
-										<input type="checkbox">
-										<span class="au-checkmark"></span>
-								</label>
-						    </td>
-							<td>7</td>
-							<td>screen</td>
-							<td><a href="edit_category.html"><input class="bg-success" type="button" value="Edit" name="Edit"/></a></td>
-							<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
-						</tr>
-						<tr>
-							<td>
-								<label class="au-checkbox">
-										<input type="checkbox">
-										<span class="au-checkmark"></span>
-								</label>
-						    </td>
-								<td>8</td>
-								<td>Batteries</td>
-								<td><a href="edit_category.html"><input class="bg-success" type="button" value="Edit" name="Edit"/></a></td>
-								<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
-					    </tr>
-
-					  <tr>
-							<td>
-								<label class="au-checkbox">
-										<input type="checkbox">
-										<span class="au-checkmark"></span>
-								</label>
-						    </td>
-							<td>9</td>
-							<td>Headphones</td>
-							<td><a href="edit_category.html"><input class="bg-success" type="button" value="Edit" name="Edit"/></a></td>
-							<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
-						</tr>
-						<tr>
-							<td>
-								<label class="au-checkbox">
-										<input type="checkbox">
-										<span class="au-checkmark"></span>
-								</label>
-						    </td>
-								<td>10</td>
-								<td>Covers</td>
-								<td><a href="edit_category.html"><input class="bg-success" type="button" value="Edit" name="Edit"/></a></td>
-								<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
-						</tr>
-						<tr>
-							<td>
-								<label class="au-checkbox">
-										<input type="checkbox">
-										<span class="au-checkmark"></span>
-								</label>
-						    </td>
-								<td>11</td>
-								<td>Chargers</td>
-								<td><a href="edit_category.html"><input class="bg-success" type="button" value="Edit" name="Edit"/></a></td>
-								<td><input class="bg-danger" type="button" value="Delete" name="Delete"/></td>
-					    </tr>
-
-                </tbody>
-              </table>
-          </div>
-          <!-- END DATA TABLE-->
-      </div>
-     </div>
 
 
 
